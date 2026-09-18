@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import ReactPlayer from 'react-player/youtube';
 import { Sparkles, Heart, Frown, PartyPopper, Music } from 'lucide-react';
 
 const homeImages = [
@@ -24,18 +25,23 @@ export default function Home() {
 
   return (
     <div className="min-h-screen relative overflow-hidden bg-slate-900">
-      {/* Music Iframe */}
-      {partyStarted && (
-        <iframe 
-          width="0" 
-          height="0" 
-          src="https://www.youtube.com/embed/Gs069dndIYk?autoplay=1&loop=1&playlist=Gs069dndIYk" 
-          title="September" 
-          frameBorder="0" 
-          allow="autoplay" 
-          className="hidden"
-        ></iframe>
-      )}
+      {/* Music Player */}
+      <div className="hidden">
+        <ReactPlayer 
+          url="https://www.youtube.com/watch?v=Gs069dndIYk" 
+          playing={partyStarted} 
+          loop={true}
+          volume={1}
+          width="10px"
+          height="10px"
+          playsinline={true}
+          config={{
+            youtube: {
+              playerVars: { autoplay: 1 }
+            }
+          }}
+        />
+      </div>
 
       {/* Start Party Overlay */}
       <AnimatePresence>
