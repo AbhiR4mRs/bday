@@ -220,8 +220,10 @@ export default function Home() {
               <div className="text-2xl md:text-4xl font-black text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-violet-500 flex items-center gap-3">
                 Happy Belated Birthday <Heart className="text-pink-500 fill-current w-8 h-8" />
               </div>
-              <p className="text-xl md:text-3xl font-bold text-pink-400 mt-4 animate-pulse">
+              <p className="text-xl md:text-3xl font-bold text-pink-400 mt-4 flex items-center justify-center gap-4 animate-pulse">
+                <img src="/images/hidha1.jpg" alt="Hidha" className="w-12 h-12 md:w-16 md:h-16 rounded-full object-cover border-2 border-pink-400 shadow-[0_0_15px_rgba(236,72,153,0.5)]" />
                 I miss you.
+                <img src="/images/hidha3.jpg" alt="Hidha" className="w-12 h-12 md:w-16 md:h-16 rounded-full object-cover border-2 border-pink-400 shadow-[0_0_15px_rgba(236,72,153,0.5)]" />
               </p>
             </div>
           </motion.div>
