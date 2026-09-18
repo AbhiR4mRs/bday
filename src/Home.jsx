@@ -81,8 +81,8 @@ export default function Home() {
              animate={{ rotate: [-2, 2, -2] }}
              transition={{ repeat: Infinity, duration: 3, ease: "easeInOut" }}
           >
-            <h1 className="text-6xl sm:text-7xl md:text-9xl font-black mb-4 md:mb-6 bg-clip-text text-transparent bg-gradient-to-r from-pink-400 via-purple-400 to-indigo-400 drop-shadow-[0_0_15px_rgba(236,72,153,0.3)]">
-              Happy<br/>Birthday<br/><span className="text-pink-500">Hidha!</span> 🎂
+            <h1 className="text-6xl sm:text-7xl md:text-9xl font-black mb-4 md:mb-6 drop-shadow-[0_0_15px_rgba(236,72,153,0.3)]">
+              <span className="bg-clip-text text-transparent bg-gradient-to-r from-pink-400 via-purple-400 to-indigo-400">Happy<br/>Birthday<br/></span><span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-400 via-purple-400 to-indigo-400">Hidha!</span> <span className="text-white">🎂</span>
             </h1>
           </motion.div>
           <p className="text-xl md:text-3xl text-slate-200 font-bold tracking-widest mt-4">
@@ -164,9 +164,9 @@ export default function Home() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-3xl md:text-5xl font-black text-center mb-12 md:mb-16 text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-cyan-400"
+          className="text-3xl md:text-5xl font-black text-center mb-12 md:mb-16 text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-cyan-400 uppercase tracking-widest"
         >
-          Some random cool moments 😎
+          COOL
         </motion.h2>
         
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8">

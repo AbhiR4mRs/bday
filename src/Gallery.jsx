@@ -37,10 +37,6 @@ export default function Gallery() {
   return (
     <div className="min-h-screen p-4 md:p-8 pt-8">
       <div className="max-w-7xl mx-auto">
-        <h1 className="text-4xl md:text-6xl font-black mb-12 text-center bg-clip-text text-transparent bg-gradient-to-r from-pink-400 via-purple-500 to-indigo-500 uppercase tracking-widest">
-          Dumbness OF YOU
-        </h1>
-
         <div className="columns-1 sm:columns-2 lg:columns-3 xl:columns-4 gap-4 md:gap-6 space-y-4 md:space-y-6">
           {galleryItems.map((item, idx) => (
             <motion.div
