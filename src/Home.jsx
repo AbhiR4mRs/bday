@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import ReactPlayer from 'react-player/youtube';
+import ReactPlayer from "react-player";
 import { Sparkles, Heart, Frown, PartyPopper, Music } from 'lucide-react';
 
 const homeImages = [
