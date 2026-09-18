@@ -26,7 +26,7 @@ export default function Home() {
   return (
     <div className="min-h-screen relative overflow-hidden bg-slate-900">
       {/* Music Player */}
-      <div className="hidden">
+      <div className="absolute top-0 left-0 w-[1px] h-[1px] opacity-0 pointer-events-none -z-50 overflow-hidden">
         <ReactPlayer 
           url="https://www.youtube.com/watch?v=Gs069dndIYk" 
           playing={partyStarted} 
