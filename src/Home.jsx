@@ -69,7 +69,7 @@ export default function Home() {
               </button>
             </motion.div>
             <p className="mt-6 text-pink-300 font-medium tracking-widest animate-pulse text-sm md:text-base text-center">
-              (TURN UP YOUR VOLUME)
+              
             </p>
           </motion.div>
         )}
